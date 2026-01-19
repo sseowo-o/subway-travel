@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 header {
@@ -71,7 +71,7 @@ h1 {
 .game-area {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 8px;
     width: 100%;
 }
 
@@ -79,20 +79,15 @@ h1 {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.result-card:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
 
 .result-card::before {
     content: '';
@@ -120,15 +115,10 @@ h1 {
 }
 
 .value {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: right;
     flex: 3;
-}
-
-/* Specific styling for direction to handle long text */
-#direction-result {
-    font-size: 1.5rem;
 }
 
 .controls {
@@ -215,8 +205,6 @@ h1 {
 /* Map Area Styling */
 .map-area {
     width: 100%;
-    margin-top: 1rem;
-    padding: 1rem 0;
     overflow: hidden;
     position: relative;
     /* Create a fade effect on edges */
@@ -228,7 +216,6 @@ h1 {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 20px 0;
     position: relative;
     /* Hide scrollbar */
     scrollbar-width: none;
