@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 지하철 게임 (Random Subway Picker)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Noto+Sans+KR:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>SEOUL METRO <span class="accent">ROULETTE</span></h1>
+            <p class="subtitle">어디로 떠나볼까요?</p>
+        </header>
+
+        <main class="game-area">
+            <div class="result-card" id="line-card">
+                <div class="label">호선</div>
+                <div class="value" id="line-result">?</div>
+            </div>
+
+            <div class="result-card" id="station-card">
+                <div class="label">카운트</div>
+                <div class="value" id="station-result">?</div>
+            </div>
+
+            <div class="result-card" id="direction-card">
+                <div class="label">기준역</div>
+                <div class="value" id="direction-result">?</div>
+            </div>
+
+            <!-- New Map Container -->
+            <div id="map-area" class="map-area">
+                <div id="map-scroll-container">
+                    <div id="map-track"></div>
+                    <div id="player-token" class="token"></div>
+                </div>
+            </div>
+        </main>
+
+        <div class="controls">
+            <button id="spin-btn" class="spin-btn">
+                <span class="btn-text">START</span>
+                <span class="btn-shine"></span>
+            </button>
+        </div>
+    </div>
+
+    <script src="stations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
